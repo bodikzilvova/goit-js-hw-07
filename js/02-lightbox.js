@@ -1,6 +1,6 @@
 
 import { galleryItems } from './gallery-items.js';
-import SimpleLightbox from "simplelightbox/dist/simple-lightbox.esm";
+
 // Change code below this line
 
 
@@ -31,7 +31,11 @@ targetLink.src = originalUrl;
 
 });
 
-const lightbox = new SimpleLightbox('.gallery a', {});
+const lightbox = new SimpleLightbox('.gallery a', {
+    captionDelay: 250,
+    captionsData: "alt",
+});
+
 
 
 
